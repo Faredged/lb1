@@ -1,0 +1,24 @@
+using System;
+
+namespace Lab1
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+
+            System.Console.WriteLine("Введіть число x: ");
+            int x = int.Parse(Console.ReadLine());
+
+            if (x >= 0)
+            {
+                double result = 1;
+
+                    result = (2 * Math.Pow(x , 4) - 3 * Math.Pow(x,3) + 4 * Math.Pow(x,2) - 5 * x + 6);
+
+                System.Console.WriteLine(result);
+            }
+        }
+    }
+}
